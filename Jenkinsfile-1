@@ -25,7 +25,7 @@ pipeline {
         }
         stage('build image') {
           steps {
-            sh 'docker build -t raulmart/devops-web-project:v1 --label devops-web-project-server .'
+            sh 'docker build -t raulmart/devops-web-project:v2 --label devops-web-project-server .'
           }
         }
         stage('Docker Hub Login') {
